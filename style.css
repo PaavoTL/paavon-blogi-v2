@@ -53,12 +53,13 @@ p{
 header,nav{
     position: relative;
     z-index: 100;
-    background-color: #0f0f0f;
+    
 }
 
 header{
     width: 100%;
-
+    background-color: #0f0f0f;
+    background-image: url(kuvat/noise.png);
     box-shadow: 0rem 1rem 0.8rem 0rem #00000070;
 }
 
@@ -72,6 +73,9 @@ nav{
     height:auto;
     width: 100%;
     text-align: center;
+
+    border-top: 0.4rem solid #11111100;
+    border-bottom: 0.4rem solid #11111100;
 }
 
 nav a{
@@ -118,8 +122,9 @@ article div.imgContainer{
     background-attachment: fixed; 
 
     height: 100%;
+    width: 100%;
 
-    width:100vw;
+    margin: 0;
 
     z-index: 1;
     clip: rect(0,auto, auto, 0)
@@ -127,20 +132,31 @@ article div.imgContainer{
 
 article div.txtContainer{
     position: relative;
-    min-height: 10rem;
 
     
     background-color:  #0f0f0f;
+    background-image: url(kuvat/noise.png);
     z-index: 100;
     
-    border-top: 0.4rem solid #111111;
-    border-bottom: 0.4rem solid #111111;
+    border-top: 0.4rem solid #11111100;
+    border-bottom: 0.4rem solid #11111100;
 
     text-align: center
 }
 
 article:not(:last-of-type) div.txtContainer{
     box-shadow: 0rem 1rem 0.8rem 0rem #00000070;
+}
+
+div.dent{
+    margin:1rem 0rem;
+    padding: 0.5rem;
+    box-shadow: inset 0rem 0.2rem 1rem #000000;
+    background-color: #00000080;
+}
+
+div.txtContainer h3{
+    text-shadow: 0rem 0.7rem 0.5rem #000000;
 }
 
 /* ====== Article ====== */
@@ -155,4 +171,6 @@ footer{
 
 footer p{
     padding: 1rem;
+    background-image: url(kuvat/noise.png);
 }
+/* ====== Footer ====== */
