@@ -60,7 +60,7 @@ header{
     width: 100%;
     background-color: #0f0f0f;
     background-image: url(kuvat/noise.png);
-    box-shadow: 0rem 1rem 0.8rem 0rem #00000070;
+    box-shadow: 0rem 1rem 0.8rem 0rem #00000070, inset -0.1rem -1rem 1rem -1rem #ffffff40;
 }
 
 header div.logo{
@@ -74,8 +74,8 @@ nav{
     width: 100%;
     text-align: center;
 
-    border-top: 0.4rem solid #11111100;
-    border-bottom: 0.4rem solid #11111100;
+    border-top: 0.01rem solid #11111100;
+    border-bottom: 0.01rem solid #11111100;
 }
 
 nav a{
@@ -118,7 +118,9 @@ article img{
 
 article div.imgContainer{
     position: absolute;
-    background-image: url("kuvat/texture.png"),linear-gradient(to right,#222222,#ffffff,#222222);
+    background-image: url("kuvat/texture.png"),
+    linear-gradient(to right,#222222,#ffffff,#222222);
+    
     background-attachment: fixed;
     background-blend-mode: multiply;
 
@@ -139,21 +141,18 @@ article div.txtContainer{
     background-image: url(kuvat/noise.png);
     z-index: 100;
     
-    border-top: 0.4rem solid #11111100;
-    border-bottom: 0.4rem solid #11111100;
+    border-top: 0.01rem solid #11111100;
+    border-bottom: 0.01rem solid #11111100;
+
+    box-shadow: inset 0rem 0.5rem 0.8rem -0.5rem #ffffff40;
 
     text-align: center
 }
 
 article:not(:last-of-type) div.txtContainer{
-    box-shadow: 0rem 1rem 0.8rem 0rem #00000070;
-}
-
-div.dent{
-    margin:1rem 0rem;
-    padding: 0.5rem;
-    box-shadow: inset 0rem 0.2rem 1rem #000000;
-    background-color: #00000080;
+    box-shadow: 0rem 1rem 0.8rem 0rem #00000070,
+    inset 0rem -0.5rem 0.8rem -0.5rem #ffffff40, 
+    inset 0rem 0.5rem 0.8rem -0.5rem #ffffff40;
 }
 
 div.txtContainer h3{
@@ -175,3 +174,31 @@ footer p{
     background-image: url(kuvat/noise.png);
 }
 /* ====== Footer ====== */
+
+/* ===================================================================== */
+
+/* ====== Other ======= */
+
+div.dent{
+    margin:1.5rem 0rem;
+    padding: 0.5rem;
+    box-shadow: inset 0rem 0.4rem 5rem #000000;
+    background-color: #00000080;
+}
+
+.bothGlow{
+    box-shadow: 0rem 1rem 0.8rem 0rem #00000070,
+    inset 0rem -0.5rem 0.8rem -0.5rem #ffffff40, 
+    inset 0rem 0.5rem 0.8rem -0.5rem #ffffff40;
+}
+
+.topGlow{
+    box-shadow: 0rem 1rem 0.8rem 0rem #00000070,
+    inset 0rem -0.5rem 0.8rem -0.5rem #ffffff40;
+}
+
+.bottomGlow{
+    box-shadow: 0rem 1rem 0.8rem 0rem #00000070, 
+    inset 0rem 0.5rem 0.8rem -0.5rem #ffffff40;
+}
+/* ====== other ====== */
