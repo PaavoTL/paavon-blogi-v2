@@ -118,8 +118,7 @@ article img{
 
 article div.imgContainer{
     position: absolute;
-    background-color: #646464;
-    background-image: url("kuvat/texture.png");
+    background-image: url("kuvat/texture.png"),linear-gradient(to right,#222222,#ffffff,#222222);
     background-attachment: fixed;
     background-blend-mode: multiply;
 
