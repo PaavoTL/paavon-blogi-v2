@@ -103,7 +103,7 @@ article div.wrap{
     height: 98vh;
 }
 
-article img{
+div.imgContainer img{
     max-height: 98vh;
     max-width: 95vw;
 
@@ -167,11 +167,12 @@ div.txtContainer h3{
 footer{
     background-color:  #0f0f0f;
     text-align: center;
+    background-image: url(kuvat/noise.png);
 }
 
 footer p{
-    padding: 1rem;
-    background-image: url(kuvat/noise.png);
+    padding: 2rem;
+    text-shadow: 0rem 0.5rem 0.2rem #000000;
 }
 /* ====== Footer ====== */
 
