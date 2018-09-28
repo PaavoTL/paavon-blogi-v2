@@ -118,8 +118,10 @@ article img{
 
 article div.imgContainer{
     position: absolute;
+    background-color: #646464;
     background-image: url("kuvat/texture.png");
-    background-attachment: fixed; 
+    background-attachment: fixed;
+    background-blend-mode: multiply;
 
     height: 100%;
     width: 100%;
