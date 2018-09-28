@@ -1,0 +1,158 @@
+:root{
+    font-size: 10px;
+}
+
+html, body{
+    min-height: 100%;
+    width: 100%;
+
+    background-color: #111111;
+
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    background-image: url("kuvat/texture.png");
+    background-attachment: fixed;
+}
+/* ====== fonts ====== */
+h1, h2, h3, h4, h5, h6, p{
+    color: whitesmoke;
+    margin: 0;
+}
+
+h1{
+    font-size: 7.5rem;
+}
+h2{
+    font-size: 6.5rem;
+}
+h3{
+    font-size: 5.5rem;
+}
+h4{
+    font-size: 4.5rem;
+}
+h5{
+    font-size: 3.5rem;
+}
+h6{
+    font-size: 3rem;
+}
+p{
+    font-size: 2rem;
+}
+/* ====== fonts ====== */
+
+/* ===================================================================== */
+
+/* ====== Header ====== */
+header,nav{
+    position: relative;
+    z-index: 100;
+    background-color: #0f0f0f;
+}
+
+header{
+    width: 100%;
+
+    box-shadow: 0rem 1rem 0.8rem 0rem #00000070;
+}
+
+header div.logo{
+    height: 10rem;
+}
+/* ====== Header ====== */
+
+/* ====== Navigation ====== */
+nav{
+    height:auto;
+    width: 100%;
+    text-align: center;
+}
+
+nav a{
+    height: 100%;
+    color: whitesmoke;
+    font-size:  2rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav a:not(:first-child){
+    padding-left: 1rem;
+}
+
+nav a:not(:last-child){
+    padding-right: 1rem;
+    border-right: 0.2rem solid whitesmoke;
+}
+/* ====== Navigation ====== */
+
+/* ===================================================================== */
+
+/* ====== Article ====== */
+article div.wrap{
+    height: 98vh;
+}
+
+article img{
+    max-height: 98vh;
+    max-width: 95vw;
+
+    position: fixed;
+    
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0rem 0rem 10rem 5rem #0000004b;
+    z-index: -2;
+}
+
+article div.imgContainer{
+    position: absolute;
+    background-image: url("kuvat/texture.png");
+    background-attachment: fixed; 
+
+    height: 100%;
+
+    width:100vw;
+
+    z-index: 1;
+    clip: rect(0,auto, auto, 0)
+}
+
+article div.txtContainer{
+    position: relative;
+    min-height: 10rem;
+
+    
+    background-color:  #0f0f0f;
+    z-index: 100;
+    
+    border-top: 0.4rem solid #111111;
+    border-bottom: 0.4rem solid #111111;
+
+    text-align: center
+}
+
+article:not(:last-of-type) div.txtContainer{
+    box-shadow: 0rem 1rem 0.8rem 0rem #00000070;
+}
+
+/* ====== Article ====== */
+
+/* ===================================================================== */
+
+/* ====== Footer ====== */
+footer{
+    background-color:  #0f0f0f;
+    text-align: center;
+}
+
+footer p{
+    padding: 1rem;
+}
