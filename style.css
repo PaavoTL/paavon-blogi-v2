@@ -14,10 +14,6 @@ html, body{
 
 }
 
-body{
-    background-image: url("kuvat/texture.png");
-    background-attachment: fixed;
-}
 /* ====== fonts ====== */
 h1, h2, h3, h4, h5, h6, p{
     color: whitesmoke;
@@ -62,7 +58,9 @@ header{
     width: 100%;
     background-color: #0f0f0f;
     background-image: url(kuvat/noise.png);
-    box-shadow: 0rem 1rem 0.8rem 0rem #00000070, inset -0.1rem -1rem 1rem -1rem #ffffff40;
+    box-shadow: 0rem 1rem 0.8rem 0rem #00000070, 
+    -0.1rem -1rem 1rem -1rem #ffffff40 inset;
+    padding:0 0 1rem 0;
 }
 
 header div.logo{
@@ -87,6 +85,11 @@ nav a{
     font-size:  2rem;
     display: inline-block;
     text-decoration: none;
+    transition:all 0.2s;
+}
+
+nav a:hover{
+    color: aqua;
 }
 
 nav a:not(:first-child){
@@ -123,6 +126,7 @@ article div.imgContainer{
     position: absolute;
     background-image: url("kuvat/texture.png"),
     linear-gradient(to right,#222222,#ffffff,#222222);
+    background-position-x: 0px;
     
     background-attachment: fixed;
     background-blend-mode: multiply;
@@ -139,6 +143,7 @@ article div.imgContainer{
 article div.txtContainer{
     position: relative;
 
+    padding:1rem 0;
     
     background-color:  #0f0f0f;
     background-image: url(kuvat/noise.png);
